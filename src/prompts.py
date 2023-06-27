@@ -37,7 +37,7 @@ Don't wrap UUID in brackets.
 
 SUFFIX = """Begin!
 
-Previous conversation history:
+以前的对话历史记录：:
 {chat_history}
 
 New input: {input}

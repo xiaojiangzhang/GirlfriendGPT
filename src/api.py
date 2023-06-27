@@ -36,7 +36,7 @@ langchain.cache = None
 class GirlFriendAIConfig(TelegramTransportConfig):
     bot_token: str = Field(
         description="Your telegram bot token.\nLearn how to create one here: "
-        "https://github.com/EniasCailliau/GirlfriendGPT/blob/main/docs/register-telegram-bot.md"
+        "https://github.com/xiaojiangzhang/GirlfriendGPT/blob/main/docs/register-telegram-bot.md"
     )
     elevenlabs_api_key: str = Field(
         default="", description="Optional API KEY for ElevenLabs Voice Bot"
@@ -49,7 +49,7 @@ class GirlFriendAIConfig(TelegramTransportConfig):
     )
     personality: str = Field(
         description="The personality you want to deploy. Pick one of the personalities listed here: "
-        "https://github.com/EniasCailliau/GirlfriendGPT/tree/main/src/personalities"
+        "https://github.com/xiaojiangzhang/GirlfriendGPT/tree/main/src/personalities"
     )
     use_gpt4: bool = Field(
         False,

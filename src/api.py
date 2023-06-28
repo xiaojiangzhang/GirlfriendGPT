@@ -100,13 +100,13 @@ class GirlfriendGPT(LangChainTelegramBot):
             memory=memory,
         )
 
-    def voice_tool(self) -> Optional[Tool]:
-        """Return tool to generate spoken version of output text."""
-        return GenerateSpeechTool(
-            client=self.client,
-            voice_id=self.config.elevenlabs_voice_id,
-            elevenlabs_api_key=self.config.elevenlabs_api_key,
-        )
+    # def voice_tool(self) -> Optional[Tool]:
+    #     """Return tool to generate spoken version of output text."""
+    #     return GenerateSpeechTool(
+    #         client=self.client,
+    #         voice_id=self.config.elevenlabs_voice_id,
+    #         elevenlabs_api_key=self.config.elevenlabs_api_key,
+    #     )
 
     def get_memory(self, client: Steamship, chat_id: str) -> BaseChatMemory:
         return ConversationBufferMemory(
@@ -125,8 +125,8 @@ class GirlfriendGPT(LangChainTelegramBot):
             # GenerateAlbumArtTool(self.client)
             # RemindMe(invoke_later=self.invoke_later, chat_id=chat_id),
             # VideoMessageTool(self.client),
-            SelfieTool(self.client),
-            VideoMessageTool(self.client),
+            # SelfieTool(self.client),
+            # VideoMessageTool(self.client),
         ]
 
 
@@ -137,6 +137,6 @@ if __name__ == "__main__":
         method="prompt",
         agent_package_config={
             "botToken": "not-a-real-token-for-local-testing",
-            "personality": "sacha",
+            "personality": "binyu",
         },
     ).run()

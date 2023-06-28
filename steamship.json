@@ -1,6 +1,6 @@
 {
 	"type": "package",
-	"handle": "girlfriend-gpt-bot",
+	"handle": "bingyu",
 	"version": "2.1.0-rc.6",
 	"description": "",
 	"author": "",
@@ -16,7 +16,7 @@
 	"configTemplate": {
 		"bot_token": {
 			"type": "string",
-			"description": "Your telegram bot token.\nLearn how to create one here: https://github.com/EniasCailliau/GirlfriendGPT/blob/main/docs/register-telegram-bot.md",
+			"description": "Your telegram bot token.\nLearn how to create one here: https://github.com/xiaojiangzhang/GirlfriendGPT/blob/main/docs/register-telegram-bot.md",
 			"default": null
 		},
 		"api_base": {
@@ -41,7 +41,7 @@
 		},
 		"personality": {
 			"type": "string",
-			"description": "The personality you want to deploy. Pick one of the personalities listed here: https://github.com/EniasCailliau/GirlfriendGPT/tree/main/src/personalities",
+			"description": "The personality you want to deploy. Pick one of the personalities listed here: https://github.com/xiaojiangzhang/GirlfriendGPT/tree/main/src/personalities",
 			"default": null
 		},
 		"use_gpt4": {
